@@ -1,0 +1,7 @@
+Script started on Thu 16 Nov 2017 09:25:54 PM EST
+]2;gsp32:/eecs/home/fahad24gsp32 111 % file /usr/bin/* | grep "shell script" | wc -l
+451
+gsp32 112 % exit
+exit
+
+Script done on Thu 16 Nov 2017 09:26:25 PM EST

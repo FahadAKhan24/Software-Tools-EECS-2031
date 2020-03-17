@@ -1,0 +1,42 @@
+#!/bin/bash
+gcc -ansi -pedantic is42.c -o is42
+
+./is42 42
+
+echo $?
+if $? ; then
+echo "is42 was passed the value 42"
+fi
+./is42 not42
+echo $?
+if  1 ; then 
+	echo "is42 was not passed the value 42"
+fi
+./is42 
+echo $?
+if  $?  ; then 
+	echo "is42 was not passed the value 42"
+fi
+
+:'
+#!/bin/bash
+gcc -ansi -pedantic is42.c -o is42
+./is42 42 
+
+if [ ]; then
+	echo "is42 was passed the value 42"
+fi
+
+if [ ./is42 not42 ]; then 
+	echo "is42 was not passed the value 42"
+fi
+
+if  [  ./is42 ]; then 
+	echo "is42 was not passed the value 42"
+fi
+'
+:'
+function is42(){
+
+}
+'

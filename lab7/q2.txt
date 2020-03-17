@@ -1,0 +1,31 @@
+Script started on Fri 17 Nov 2017 05:55:15 PM EST
+]2;ea03:/eecs/home/fahad24/eecs2031/lab7ea03 145 % find /cs/home/ -name "*.o"
+/cs/home/fahad24/eecs2031/lab4/lexTester.o
+/cs/home/fahad24/eecs2031/lab4/nextInputChar.o
+/cs/home/fahad24/eecs2031/lab4/tokenStack.o
+/cs/home/fahad24/eecs2031/lab4/rpnCalc.o
+/cs/home/fahad24/eecs2031/lab4/lexical.o
+/cs/home/fahad24/eecs2031/lab6/makeRed.o
+/cs/home/fahad24/eecs2031/lab6/ppmtools.o
+/cs/home/fahad24/eecs2031/lab6/fixUnderwater.o
+/cs/home/fahad24/eecs2031/lab6/invert.o
+/cs/home/fahad24/eecs2031/lab3/fileInfo.o
+/cs/home/fahad24/eecs2031/lab3/extractFile.o
+/cs/home/fahad24/eecs2031/lab3/dos2sd.o
+/cs/home/fahad24/eecs2031/lab3/dumpSector.o
+/cs/home/fahad24/eecs2031/lab3/listFiles.o
+/cs/home/fahad24/eecs2031/lab1/parsedate_tester.o
+/cs/home/fahad24/eecs2031/lab1/parsedate.o
+/cs/home/fahad24/eecs2031/lab2/identifier_tester.o
+/cs/home/fahad24/eecs2031/lab2/identifiers.o
+^C
+ea03 146 % find /cs/home/ -name "*.o" | wc -l
+18
+ea03 147 % echo " to delete files, use this command:"
+ to delete files, use this command:
+ea03 148 % echo " find /cs/home/ -name "*.o" -delete"
+echo: No match.
+ea03 149 % exit
+exit
+
+Script done on Fri 17 Nov 2017 05:57:39 PM EST

@@ -1,0 +1,6 @@
+2 1 - print
+dumpToken: number token |1|
+2 2 + 3 - print
+dumpToken: number token |1|
+2 2 2 3 + - + print
+dumpToken: number token |/|

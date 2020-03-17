@@ -1,0 +1,14 @@
+#include <stdio.h>
+float fahrenheit2celsius(const float f);
+int main()
+{
+
+ printf("%f" , fahrenheit2celsius(100.0);
+    return 0;
+    
+}
+
+    float fahrenheit2celsius(const float f) 
+{
+  return 5.0/9.0 * (f-32);
+}  

@@ -1,0 +1,18 @@
+Script started on Thu 16 Nov 2017 10:21:22 PM EST
+]2;gsp32:/eecs/home/fahad24/eecs2031/lab7gsp32 125 % rev foo.txt
+peZ del
+anavrin
+senots gnillor
+dnuorgrednu tevlev
+srethgif oof
+gsp32 126 % rev < foo.txt
+peZ del
+anavrin
+senots gnillor
+dnuorgrednu tevlev
+srethgif oof
+gsp32 127 % rev foo.txt > foo.out
+gsp32 128 % exit
+exit
+
+Script done on Thu 16 Nov 2017 10:21:49 PM EST

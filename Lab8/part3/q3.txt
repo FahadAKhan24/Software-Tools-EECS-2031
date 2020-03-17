@@ -1,0 +1,53 @@
+Script started on Fri 24 Nov 2017 05:53:28 PM EST
+]2;ea01:/eecs/home/fahad24/eecs2031/Lab8/part3ea01 216 % cat checkhello.sh
+
+#FAHAD AHMED KHAN
+#214468888
+
+
+#!/bin/bash
+rm -f output.log
+rm -f /usr/tmp/temp$$
+if test -e hello.c ; then
+  gcc -ansi -pedantic hello.c -o hello 2>/usr/tmp/temp$$ 
+
+     if test -s /usr/tmp/temp$$ ; then
+       echo "hello.c compilation errors" > output.log
+       exit
+     else 
+         # append to output.log file "hello.c compiles successfully"
+         echo "hello.c compiles successfully" > output.log
+     fi     
+          
+ 
+else 
+    echo "hello.c does not exist" > output.log 
+    exit
+fi
+    
+./hello > helloout.txt
+echo "Hello World" > hellotest.txt
+
+if cmp -s helloout.txt hellotest.txt ; then
+   echo "output correct" > hello.log
+else 
+    echo "output mismatch " > hello.log
+fi
+exit
+
+
+
+
+ea01 217 % ./checkhello.sh
+ea01 218 % cat output.log
+hello.c compiles successfully
+ea01 219 % cat helloout.txt
+Hello World
+ea01 220 % cat hellotest.txt
+Hello World
+ea01 221 % cat hello.log
+output correct
+ea01 222 % exit
+exit
+
+Script done on Fri 24 Nov 2017 05:54:35 PM EST

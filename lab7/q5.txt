@@ -1,0 +1,22 @@
+Script started on Fri 17 Nov 2017 05:36:17 PM EST
+]2;ea03:/eecs/home/fahad24/eecs2031/lab7ea03 137 % ./mytest.sh
+./mytest.sh: Permission denied.
+ea03 138 % echop[K "file is not executable yet.only rw"
+file is not executable yet.only rw
+ea03 139 % chmod 700 mytest.sh
+ea03 140 % echo "file is rwx now"
+file is rwx now
+ea03 141 % ./mytest.sh
+This takes time to output
+ea03 142 % ./mytestv2.sh
+This 
+takes 
+time 
+to 
+output
+ea03 143 % echo "output is on new line now"
+output is on new line now
+ea03 144 % exit
+exit
+
+Script done on Fri 17 Nov 2017 05:38:40 PM EST

@@ -1,0 +1,58 @@
+#!/bin/bash
+rm -f output.log
+#mkdir output.log
+rm -f /usr/tmp/temp$$
+if test -e hello.c ; then
+  gcc -ansi -pedantic hello.c -o hello 2>/usr/tmp/temp$$ 
+
+     if test -s /usr/tmp/temp$$ ; then
+       cat  >> output.log  
+       hello.c compilation errors
+       ^D
+       exit
+     else 
+          cat >> output.log                 # append to output.log file "hello.c compiles successfully"
+          hello.c compiles successfully
+          ^D
+     fi     
+          
+ 
+else 
+    cat >> output.log  #M2
+    hello.c does not exist
+    ^D
+    exit
+fi
+    
+./hello > helloout.txt
+cat >> hellotest.txt
+Hello World
+^D
+if test diff hello.txt hellotest.txt ; then
+  cat >> hello.log
+  output correct
+  ^D
+else 
+  cat >> hello.log
+  Output mismatch 
+  ^D
+fi
+exit
+
+
+
+
+
+# 1> file redirects stdout to file
+# 2> file redirects stderr to file
+# &> file redirects stdout and stderr to file
+
+# 2>&1   2 refers to the second file descriptor of the process, i.e. stderr.
+#       > means redirection.
+#      &1 means the target of the redirection should be the same location as the first file descriptor, i.e. stdout
+ 
+# -s file
+#  True if file exists and has a size greater than zero
+
+# M2 : cat > output.log
+#      hello.c compiles successfully

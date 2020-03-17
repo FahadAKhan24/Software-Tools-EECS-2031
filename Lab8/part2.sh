@@ -1,0 +1,12 @@
+#!/bash/bin
+let "z=($RANDOM % 10)+1"
+echo $z
+echo "guess the number"
+read r
+until test $z -eq $r ; do
+	echo "that's not it, guess again"
+	read r
+done
+echo "Congratulations"
+exit
+

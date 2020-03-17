@@ -1,0 +1,63 @@
+Script started on Tue 21 Nov 2017 08:05:09 PM EST
+]2;gsp29:/eecs/home/fahad24/eecs2031/Lab8gsp29 147 % cat loop1a.sh loop1b.sh loop1c.sh
+#!/bin/bash
+z=1
+for z in $(seq 10);
+do
+	echo $z
+done
+
+
+#!/bin/bash
+z=1
+while test $z -le 10 ; 
+do
+	echo $z
+	let "z=$z+1"
+done
+
+#!/bin/bash
+z=1
+until test $z -eq 11;
+do
+	echo $z
+	let "z=$z+1"
+done
+
+gsp29 148 % ./loop1a.sh
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+gsp29 149 % ./loop1b.sh
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+gsp29 150 % ./loop1c.sh
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+gsp29 151 % exit
+exit
+
+Script done on Tue 21 Nov 2017 08:06:11 PM EST

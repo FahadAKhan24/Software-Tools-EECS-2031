@@ -1,0 +1,32 @@
+Script started on Fri 24 Nov 2017 05:01:11 PM EST
+]2;ea01:/eecs/home/fahad24/eecs2031/Lab8/part2ea01 214 % cat q2.sh
+#!/bin/bash
+let "z=($RANDOM % 10)+1"
+echo "guess the number"
+read r
+until test $z -eq $r ; do
+	echo "that's not it, guess again"
+	read r
+done
+echo "Congratulations"
+exit
+ea01 215 % ./q2.sh
+guess the number
+4
+that's not it, guess again
+7
+that's not it, guess again
+9
+that's not it, guess again
+5
+that's not it, guess again
+6
+that's not it, guess again
+3
+that's not it, guess again
+2
+Congratulations
+ea01 216 % exit
+exit
+
+Script done on Fri 24 Nov 2017 05:01:54 PM EST
